@@ -1,0 +1,211 @@
+/* this is for your CSS IDs and Classes */
+
+
+.ad {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: #ccc 0.5px solid;
+    overflow: hidden;
+    box-shadow: #ccc 4px 3px 4px;
+    margin: 0 auto;
+}
+
+.bg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    background: url('../images/bg.jpg') no-repeat;
+    animation: bg 4s ease-in-out forwards;
+    -o-animation: bg 4s ease-in-out forwards;
+    -moz-animation: bg 4s ease-in-out forwards;
+    -ms-animation: bg 4s ease-in-out forwards;
+    -webkit-animation: bg 4s ease-in-out forwards;
+    filter: blur(0px);
+    transform: scale(1);
+    transition: filter 1s ease-in-out,  transform 1s ease-in-out;
+}
+
+
+.bg:hover{
+    filter: blur(10px);
+    transform: scale(2);
+}
+
+
+@keyframes bg {
+    0% {left:0px;}
+    100% {left:-300px;}
+}
+
+@-o-keyframes bg {
+    0% {left:0px;}
+    100% {left:-300px;}
+}
+
+@-moz-keyframes bg {
+    0% {left:0px;}
+    100% {left:-300px;}
+}
+
+@-ms-keyframes bg {
+    0% {left:0px;}
+    100% {left:-300px;}
+}
+
+@-webkit-keyframes bg {
+    0% {left:0px;}
+    100% {left:-300px;}
+}
+
+
+
+.logo {
+    position: absolute;
+    overflow: hidden;
+    background: url('../images/Maya-full.png') no-repeat;
+    width: 30%;
+    height: 30%;
+    top: 10px;
+    left: 10px;
+    background-size: contain;
+    pointer-events: none;
+}
+
+
+.content {
+    position: absolute;
+    top: 180px;
+    left: -300px;
+    width: 280px;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 4px 3px 4px #ccc;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    animation: content1 4s ease-in-out forwards;
+    -o-animation: content1 4s ease-in-out forwards;
+    -moz-animation: content1 4s ease-in-out forwards;
+    -ms-animation: content1 4s ease-in-out forwards;
+    -webkit-animation: content1 4s ease-in-out forwards;
+}
+
+
+@keyframes content1 {
+    0% {opacity:0; left: -300px;}
+    100% {opacity:1; left: 0px;}
+}
+
+@-o-keyframes content1 {
+    0% {opacity:0; left: -300px;}
+    100% {opacity:1; left: 0px;}
+}
+
+@-moz-keyframes content1 {
+    0% {opacity:0; left: -300px;}
+    100% {opacity:1; left: 0px;}
+}
+
+@-ms-keyframes content1 {
+    0% {opacity:0; left: -300px;}
+    100% {opacity:1; left: 0px;}
+}
+
+@-webkit-keyframes content1 {
+    0% {opacity:0; left: -300px;}
+    100% {opacity:1; left: 0px;}
+}
+
+
+.border {
+    border: #FFF 1px solid;
+    box-sizing: border-box;
+    width: 300px;
+    height: 600px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.box1{
+    position: absolute;
+    bottom: -340px;
+    left: -110px;
+    width: 600px;
+    height: 600px;
+    background-color: #016B6B;
+    transform: rotate(105deg);
+    opacity: 0.3;
+    pointer-events: none;
+    animation: box 2s ease-in-out forwards;
+    -o-animation: box 2s ease-in-out forwards;
+    -moz-animation: box 2s ease-in-out forwards;
+    -ms-animation: box 2s ease-in-out forwards;
+    -webkit-animation: box 2s ease-in-out forwards;
+}
+
+
+@keyframes box {
+    0% {bottom: -340px;}
+    100% {bottom: -390px;}
+}
+
+@-o-keyframes box {
+    0% {bottom: -340px;}
+    100% {bottom: -390px;}
+}
+
+@-moz-keyframes box {
+    0% {bottom: -340px;}
+    100% {bottom: -390px;}
+}
+
+@-ms-keyframes box {
+    0% {bottom: -340px;}
+    100% {bottom: -390px;}
+}
+
+@-webkit-keyframes box {
+    0% {bottom: -340px;}
+    100% {bottom: -390px;}
+}
+
+
+.box2{
+    position: absolute;
+    bottom: -340px;
+    left: -110px;
+    width: 600px;
+    height: 600px;
+    background-color: #015051;
+    transform: rotate(-105deg);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.cta {
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+    margin: 0 2.5%;
+    text-align: center;
+    color: #015051;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: #015051 1px solid;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #016B6B;
+    color: #fff;
+}
